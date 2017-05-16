@@ -7,6 +7,7 @@ pod 'AFNetworking'
 #解析
 pod 'MJExtension'
 
+pod 'MBProgressHUD', '~> 0.9.2'
 
 
 end

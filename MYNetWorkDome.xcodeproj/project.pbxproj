@@ -17,8 +17,8 @@
 		88B251B01E8B3864006C35F1 /* MYNetWorkDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B251AF1E8B3864006C35F1 /* MYNetWorkDomeTests.m */; };
 		88B251BB1E8B3864006C35F1 /* MYNetWorkDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B251BA1E8B3864006C35F1 /* MYNetWorkDomeUITests.m */; };
 		88B251D11E8B3D3D006C35F1 /* MY_OpenEyesVoideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B251D01E8B3D3D006C35F1 /* MY_OpenEyesVoideModel.m */; };
-		88B251D41E8B3EFC006C35F1 /* MYNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B251D31E8B3EFC006C35F1 /* MYNetworkingManager.m */; };
 		88B251D71E8B3F06006C35F1 /* MYNetWorkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B251D61E8B3F06006C35F1 /* MYNetWorkAPI.m */; };
+		88B5BEE11ECAAAD500EB4F63 /* MYNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B5BEE01ECAAAD500EB4F63 /* MYNetworkingManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +58,10 @@
 		88B251BC1E8B3864006C35F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B251CF1E8B3D3D006C35F1 /* MY_OpenEyesVoideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MY_OpenEyesVoideModel.h; sourceTree = "<group>"; };
 		88B251D01E8B3D3D006C35F1 /* MY_OpenEyesVoideModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY_OpenEyesVoideModel.m; sourceTree = "<group>"; };
-		88B251D21E8B3EFC006C35F1 /* MYNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNetworkingManager.h; sourceTree = "<group>"; };
-		88B251D31E8B3EFC006C35F1 /* MYNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNetworkingManager.m; sourceTree = "<group>"; };
 		88B251D51E8B3F06006C35F1 /* MYNetWorkAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNetWorkAPI.h; sourceTree = "<group>"; };
 		88B251D61E8B3F06006C35F1 /* MYNetWorkAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNetWorkAPI.m; sourceTree = "<group>"; };
+		88B5BEDF1ECAAAD500EB4F63 /* MYNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNetworkingManager.h; sourceTree = "<group>"; };
+		88B5BEE01ECAAAD500EB4F63 /* MYNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNetworkingManager.m; sourceTree = "<group>"; };
 		C7FE2253B9E0227759C22F66 /* libPods-MYNetWorkDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYNetWorkDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97F63F4C6AB324F8A54BCEC /* Pods-MYNetWorkDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYNetWorkDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYNetWorkDome/Pods-MYNetWorkDome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,11 +126,11 @@
 		88B251941E8B3864006C35F1 /* MYNetWorkDome */ = {
 			isa = PBXGroup;
 			children = (
+				88B5BEDE1ECAAAD500EB4F63 /* MYNetwork */,
 				88B251D51E8B3F06006C35F1 /* MYNetWorkAPI.h */,
 				88B251D61E8B3F06006C35F1 /* MYNetWorkAPI.m */,
 				88B251CF1E8B3D3D006C35F1 /* MY_OpenEyesVoideModel.h */,
 				88B251D01E8B3D3D006C35F1 /* MY_OpenEyesVoideModel.m */,
-				88B251CA1E8B3892006C35F1 /* Network */,
 				88B251981E8B3864006C35F1 /* AppDelegate.h */,
 				88B251991E8B3864006C35F1 /* AppDelegate.m */,
 				88B2519B1E8B3864006C35F1 /* ViewController.h */,
@@ -170,14 +170,14 @@
 			path = MYNetWorkDomeUITests;
 			sourceTree = "<group>";
 		};
-		88B251CA1E8B3892006C35F1 /* Network */ = {
+		88B5BEDE1ECAAAD500EB4F63 /* MYNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				88B251D21E8B3EFC006C35F1 /* MYNetworkingManager.h */,
-				88B251D31E8B3EFC006C35F1 /* MYNetworkingManager.m */,
+				88B5BEDF1ECAAAD500EB4F63 /* MYNetworkingManager.h */,
+				88B5BEE01ECAAAD500EB4F63 /* MYNetworkingManager.m */,
 			);
-			path = Network;
-			sourceTree = "<group>";
+			path = MYNetwork;
+			sourceTree = SOURCE_ROOT;
 		};
 		C6B6D40C0D26A7C10AE09E3B /* Frameworks */ = {
 			isa = PBXGroup;
@@ -377,8 +377,8 @@
 				88B2519D1E8B3864006C35F1 /* ViewController.m in Sources */,
 				88B251D11E8B3D3D006C35F1 /* MY_OpenEyesVoideModel.m in Sources */,
 				88B2519A1E8B3864006C35F1 /* AppDelegate.m in Sources */,
+				88B5BEE11ECAAAD500EB4F63 /* MYNetworkingManager.m in Sources */,
 				88B251971E8B3864006C35F1 /* main.m in Sources */,
-				88B251D41E8B3EFC006C35F1 /* MYNetworkingManager.m in Sources */,
 				88B251D71E8B3F06006C35F1 /* MYNetWorkAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
